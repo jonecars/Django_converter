@@ -1,34 +1,34 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+My web app takes input from the user and converts it into metric.  They will choose Fahrenheit, inches, or feet to convert.
+I wrote this software to learn more about what a web app is.  I was interested to see how Django interacts with python.
 
-{Provide a description the web app that you wrote. Describe how to start a test server on your computer and what website to open up to see the first page of the app.}
-
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/3aD5HXRO1oQ)
 
 # Web Pages
+I created 4 pages.  Each page takes uses the same base.html.  This means that when I change the format of the page in the base it will update on all pages.
 
-{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
+The home page is where the user will select and enter their input.  When they click the submit button it will open one of three pages.  I will go to Fahrenheit, feet, or inches.
+
+Each of the result pages prints the variable with the converted result and adds proper labels after.  Each result page has a back button to return to the input page.
+
+Django navigates through the pages by using urls to find views.  I have a function or view set up to navigate between pages.  When the submit or back buttons are pressed then Django calls the view which returns us back to the desired page.  
+
+The main calc view takes the user input to determine which type of calculation to perform.  It then calls the correct result page.
+
+
 
 # Development Environment
+I used Django and Python inside of Visual Studio Code to create this software.
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
-
+Django handles the interactions between html/css and the saved app.
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [W3Schools](https://www.w3schools.com/django/django_getstarted.php)
+* [Youtube](https://www.youtube.com/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* I would like to add better html and css to the program.
+* I want to add a few more conversions.
+* Add another app that converts metric to imperial.
