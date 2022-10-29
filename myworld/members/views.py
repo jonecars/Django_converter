@@ -2,13 +2,11 @@ from django.http import HttpResponse
 from django.template import loader
 from django.shortcuts import render
 
-# def index(request):
-#   template = loader.get_template('myfirst.html')
-#   return HttpResponse(template.render())
+
 
 
 def home(request):
-    # return HttpResponse("hello world")
+    
     return render(request, "home.html")
 
 def calc(request):
@@ -33,5 +31,4 @@ def calc(request):
         return render(request, "result.html", {"result":metric, "result2":value1})
 
 def back(request):
-
     return render(request, "home.html" )
