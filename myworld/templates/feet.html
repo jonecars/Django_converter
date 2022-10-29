@@ -1,11 +1,15 @@
 {%extends "base.html"%}
 {% block content %}
+
+
+<!-- Display conversion -->
 =={{result}}==
 <br>
 {{result2}}m
 
 
 <br>
+<!-- Back button that goes back to home page -->
 <form action={% url 'back' %}>
     <input type="submit" value="back">
 
